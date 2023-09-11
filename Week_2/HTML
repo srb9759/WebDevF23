@@ -1,0 +1,80 @@
+// Declare HTML doctype for file
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Character set attribut specifies character encoding.
+        Failure to state this may result in malformed font characters -->
+        <meta charset="utf-8">
+        <!-- Viewport metatag is required for proper responsive rendering-->
+        <meta name="viewport" content="wdith=device-width, initial-scale=1" />
+        <!-- Title tag is the first thing  you see as google search result and the title in the browser tab-->
+        <title>HTML Elements </title>
+        <meta name="description" content="This is a description, this will show up as the tect under the title/link in a google " />
+        <meta name="keywords" content="HTML, CSS, tutorial" />
+        <meta name="author" content="your name here" />
+    </head>
+    <body>
+        <!-- There should only ever be one heading per page. This should title the page. -->
+        <h1>Hello, world!</h1>
+        <h2>this is heading 2</h2>
+        <h3>this is heading 3</h3>
+        <h4>this is heading 4</h4>
+        <h5>this is heading 5</h5>
+        <h6>this is heading 6</h6>
+
+        <p>This is a page with some <em>basic HTML</em> elements.
+             We Will update and add as we <strong>progress</strong> in this Lesson 
+        </p>
+        <!--there are some tags that are self closing like br and hr and img-->
+        <hr />
+        <p> Some text to inser <br /> 
+            a break tag into.
+        </p>
+        <!-- Ordered Lists-->
+        <ol>
+            <li> item 1</li>
+            <li> item 2</li>
+            <li> item 3</li>
+        </ol>
+
+        <!-- unordered list-->
+        <ul>
+            <li> item 1</li>
+            <li> item 2</li>
+            <li> item 3</li>
+        </ul>
+
+        <!--We can also nest lists-->
+        <ol>
+            <li>item 1</li>
+            <li>item 2
+                <ol>
+                    <li> item 1</li>
+                    <li> item 2</li>
+                    <li> item 3</li>
+                </ol>
+            </li>
+            <li> item 3</li>
+        </ol>
+        <!-- We can link external pages or websites-->
+        <a href="https://www.markdownguide.org/extended-syntax/#tables" target="_blank"
+        > Link to external window</a>
+
+        <br/>
+
+        <a href="https://www.markdownguide.org/extended-syntax/#tables" target="_self"
+        > Link to external window</a>
+
+        <!-- We can also link to other areas ID  on our page-->
+        <a href="#top">Back to top</a>
+
+        <br/>
+        <!-- we can load images form the browser-->
+        <img src="https://thewoodenskillet.com/wp-content/uploads/2022/11/easy-chicken-pot-pie-recipe-1.jpg" />
+
+        <!-- load a image from our website image directory-->
+        <img src="img/pot_pie.jpeg" title="pot pie" alt="chicken pot pie"
+    />
+
+    </body>
+</html>
