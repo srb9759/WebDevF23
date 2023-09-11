@@ -1,4 +1,4 @@
-![Chicken Pot Pie](/pot_pie.jpeg)
+![Chicken Pot Pie]([/pot_pie.jpeg](https://github.com/srb9759/WebDevF23/blob/802c4c333b7a771f6068cd1ec0a1a7169e915d5c/Week_1/pot_pie.jpeg))
 
 
 > **Recipe for a flaky Chicken Pot Pie**
