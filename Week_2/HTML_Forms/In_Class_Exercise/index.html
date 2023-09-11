@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>HTML Form Fields </title>
+    </head>
+    <body>
+        <!--Form using basic input types-->
+        <!--For more on form elements peep w3 schools https://www.w3schools.com/html/html_-->
+        <p>
+            The form action usually contains a file or link to process the form once we click submit
+        </p>
+        <form 
+            action="create-profile.js" 
+            name="user-create" 
+            target="_self" 
+            method="GET"
+        >
+            <fieldset>
+                <legend>Simple Text Input</legend>
+                <p>
+                    This is your most basic text input. We change input types with the type attribute
+                </p>
+                <input type="text" name="FirstName" placeholder="John"/>
+                <!-- We can also limit character length with another attribute-->
+                <label for="LastNam">Last Name</label>    
+                <input type="text" name="LastName" maxlength="10" placeholder="Smith"/>
+            </fieldset>
+
+            <fieldset>
+                <legend>Text Area Example</legend>
+                <label for="WhyClass">Why did you take this class?</label>
+                <textarea name="WhyClass" cols="50" rows="5"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Input Types</legend>
+                <input type="text"/>
+                <input type="number" min="10" max="100"/>
+                <input type="password"/>
+            </fieldset>
+        </form>
+    </body>
+</html>
