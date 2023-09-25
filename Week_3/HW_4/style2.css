@@ -1,0 +1,148 @@
+/* CSS variables */
+:root {
+    --card-bg-color: rgb(255, 255, 255);
+    --card-text-color: #070705;
+    --dish-type-color: #a07d49de;
+    --global-radius: 16px; 
+    --card-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02),0 6.7px 5.3px rgba(0,0,0,0.028), 0 12.5px 10px rgba(0,0,0,0.035), 0 22.3px 17.9px rgba(0,0,0,0.042), 0 41.8px 33.4px rgba(0,0,0,0.05), 0 100px 80px rgba(0,0,0,0.07);
+
+} 
+/* Presentation styles */
+body {
+
+    
+    display: flex;
+    height: 220vh;
+    align-items: center;
+    justify-content: center;
+}
+
+
+html {
+    background: url('img/kitchen2.jpeg') no-repeat center center fixed;
+    background-color: rgb(255, 255, 255);
+    background-size: cover;
+  }
+
+/* Recipe card */
+.recipe-card {
+    background-color: var(--card-bg-color);
+    box-shadow: var(--card-shadow);
+    border-radius: var(--global-radius);
+    color: var(--card-text-color);
+    width: 35rem;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+}
+
+.recipe-card figure{
+    width: 100%;
+    margin: 0;
+    height: 25rem;
+    overflow: hidden;
+    border-radius: var(--global-radius) var(--global-radius) 0 0;
+    margin-bottom: 2rem;
+
+}
+.recipe-card figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.recipe-card h1{
+    margin: 0 1.5rem 2rem 1.5rem;
+    font-size: 20px;
+    letter-spacing: -1px;
+    font-weight: 700;
+}
+
+a {
+    font-size: 40px;
+    letter-spacing: -1px;
+    font-weight: 500;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    margin-left: 8rem;
+    color: #0b0c0c;
+    text-decoration: none;
+}
+
+a:hover {
+    color:#686b6b; 
+    text-decoration:none; 
+    cursor:pointer;  
+}
+
+.recipe-card h2 {
+    margin: 0 1.5rem 2rem 1.5rem;
+    font-size: 15px;
+    letter-spacing: -1px;
+    font-weight: 400;
+}
+.recipe-card h3{
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    font-size: 15px;
+    letter-spacing: -1px;
+    font-weight: 300;
+}
+
+.ingredient-list li{
+    margin: 0 1.5rem .5rem 1.5rem;
+    font-size: 14px;
+    letter-spacing: -1px;
+    font-weight: 400;
+
+}
+
+.directions ol li{
+    margin: 0 1.5rem 1.5rem 1.5rem;
+    font-size: 10px;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+.card-meta {
+    margin: 0 1.5rem 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+
+}
+.dish-type {
+    font-weight: 600;
+    letter-spacing: -0.25px;
+    color: white;
+    margin: 0;
+    background-color: var(--dish-type-color);
+    padding: .25rem 1rem;
+    border-radius: 100px;
+
+}
+
+.dish-stats {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+
+}
+
+.dish-stats li{
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    opacity: .75;
+    
+}
+.dish-stats li svg{
+    margin-right: 0.5rem;
+}
+.dish-stats li svg path{
+    stroke: var(--card-text-color);
+    stroke-opacity: .25;
+
+}
