@@ -39,7 +39,9 @@ For my midterm I plan on creating a portfolio website that holds all of my work 
     </ol>
 </ul> 
 
-       
+<br/>
+Website Inspiration
+    -There is not a specifc website I am taking inspiration from I just came up with the idea when we were exploring the hovering functions
 
        
 <br/>
