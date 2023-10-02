@@ -3,13 +3,13 @@ For my midterm I plan on creating a portfolio website that holds all of my work 
     Home Page
 <br/>
 <ul>
-    <li>- The home page will consist of of floating circles that have slight movement to it</li>
-    <li>- When you hover over the circle it gets bigger and the orientation of the circle moves to the center of the page
+    <li>The home page will consist of of floating circles that have slight movement to it</li>
+    <li>When you hover over the circle it gets bigger and the orientation of the circle moves to the center of the page
 </li>
-    <li>- I want the circles to always be slightly bobbing in the space and the center circle is changing depending on which circle you are currently over</li>
-    <li>- Each subpage will lead to another page corresponding to the topic listed on the circle but a new window doesn't pop up instead it will stay on the same window and just change its page</li>
-    <li>- Within the subpage there will be a small nav bar that is stuck to the bottom of the screeen so even when you scroll the nav bar stays </li>
-    <li>- The nav bar once pressed will lead the viewer back to the home page with the floating orbs </li>
+    <li>I want the circles to always be slightly bobbing in the space and the center circle is changing depending on which circle you are currently over</li>
+    <li>Each subpage will lead to another page corresponding to the topic listed on the circle but a new window doesn't pop up instead it will stay on the same window and just change its page</li>
+    <li>Within the subpage there will be a small nav bar that is stuck to the bottom of the screeen so even when you scroll the nav bar stays </li>
+    <li>The nav bar once pressed will lead the viewer back to the home page with the floating orbs </li>
 </ul>
 
 <hr/>
