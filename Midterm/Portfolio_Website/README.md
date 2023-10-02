@@ -43,6 +43,10 @@ For my midterm I plan on creating a portfolio website that holds all of my work 
 Website Inspiration
     -There is not a specifc website I am taking inspiration from I just came up with the idea when we were exploring the hovering functions
 
+<hr/>
+Link to Pinterest Board With fonts, colors, and photo arrangements I like 
+https://pin.it/1Z1YwVb  
+
        
 <hr/>
 Figma File to show my plans for the website
