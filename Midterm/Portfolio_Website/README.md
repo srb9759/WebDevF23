@@ -44,7 +44,7 @@ Website Inspiration
     -There is not a specifc website I am taking inspiration from I just came up with the idea when we were exploring the hovering functions
 
        
-<br/>
+<hr/>
 Figma File to show my plans for the website
     - https://www.figma.com/proto/njvjMhCygbPZPTwPiCzDSk/Intro-to-Web-Dev%3A-Midterm?type=design&node-id=1-2&t=170fObOPTBdT34Vm-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A16 
 
