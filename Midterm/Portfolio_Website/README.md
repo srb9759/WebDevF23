@@ -70,6 +70,5 @@ Skills I need to learn
 <ol>
     <li>Different Shapes to Draw</li>
     <li>Embedd Audio Files</li>
-    <li>Embedd Google Docs or PDF files</li>
     <li>Audio on Opening Link - quite Background music in a website</li>
 </ol>
