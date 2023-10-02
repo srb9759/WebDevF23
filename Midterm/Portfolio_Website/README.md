@@ -45,3 +45,25 @@ For my midterm I plan on creating a portfolio website that holds all of my work 
 <br/>
 Figma File to show my plans for the website
     - https://www.figma.com/proto/njvjMhCygbPZPTwPiCzDSk/Intro-to-Web-Dev%3A-Midterm?type=design&node-id=1-2&t=170fObOPTBdT34Vm-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A16 
+
+<hr/>
+
+Skills I will be using 
+<ol>
+    <li>Navigation Links</li>
+    <li>Photo Gallerys</li>
+    <li>Hovering Action</li>
+    <li>Translation of Images</li>
+    <li>Sticky Navigation Bar</li>
+</ol>
+
+<hr/>
+
+Skills I need to learn 
+
+<ol>
+    <li>Different Shapes to Draw</li>
+    <li>Embedd Audio Files</li>
+    <li>Embedd Google Docs or PDF files</li>
+    <li>Audio on Opening Link - quite Background music in a website</li>
+</ol>
