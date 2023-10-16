@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Javascript Data Types</title>
+        <script type="text/Javascript">
+            //declare a variable
+            //works with all variable types
+            //var myVar;
+            //this one is for variables that will update/change over time
+            let myVar;
+            //this one is for a known constant valye. Will NOT and can NOT change over time
+            //const myVar;
+            myVar="number"
+            console.log("myVar's value is: ", myVar)
+
+            //we can also reassign a new value and new type to the same variable in JS
+            myVar= "8"
+            console.log("myVar's value is: ", myVar)
+            console.log(typeof myVar)
+
+            //even though 8 is "8" in string quotes we can still do math with it 
+            let myVar2= myVar*2
+            console.log("myVar's value is: ", myVar2)
+            console.log(typeof myVar2)
+
+
+            //We can print a mixture of strings and variables
+            let temp= 54
+            console.log("Today's temperature is: ", temp, " degrees F.")
+
+            //lets make a function
+            //declare and define a function
+            const notDeletable="I can be used in a function or anywhere else because I am global"
+            function sumVals(num1, num2){
+                //variable to kill outside of this function
+                const deletable= "I'm dead outside of here!"
+                
+                var mySum= num1 + num2
+                console.log(mySum)
+            }
+
+            //execute a function 
+            sumVals(1234,5678)
+            let myAddedNum = sumVals(1234, 5678)
+            console.log(myAddedNum)
+            
+
+            //booleans and conditionals
+            let isOn = true 
+            //toggle between off and on 
+            console.log(isOn)
+            console.log(typeof isOn)
+            console.log(switchOnOff())
+
+            function switchOnOff(){
+                if (isOn == true){
+                    console.log('isOn is currently ', isOn, "Switching to false now")
+                    isOn = false
+                }
+                else{
+                    console.log('isOn is currently ', isOn, 'Switching to true now')
+                    isOn = true
+                }
+            }
+            
+            function countToN(n){
+                for (var i=0; i<=n; i++){
+                    console.log(i)
+                }
+            }
+
+            countToN(9)
+
+            
+
+
+        </script>
+    </head>
+    <body>
+        <button onclick="sumVals(1234,5678)">Call sumVals function</button>
+        <button onclick="switchOnOff()">Toggle On/Off</button>
+        <button onclick="countToN(25)">Count to 25</button>
+    </body>
+</html>

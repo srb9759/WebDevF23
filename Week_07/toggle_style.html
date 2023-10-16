@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Toggle Styles</title>
+        <style type="text/css">
+            .active {
+                background-color: #006fff;
+                color: white;
+                font-size: 60px;
+            }
+
+        </style>
+        <script type="text/Javascript">
+            function toggleActive(){
+
+                var element= document.getElementById('changeMe')
+                console.log(element)
+
+                if(element.classList.contains('active')){
+                    element.classList.remove('active')
+                    element.innerHTML = "I'm not active anymore"
+                }
+                else{
+                    element.classList.add('active')
+                    element.innerHTML = "Whoo Hoo I'm now active"
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1 id="changeMe" onClick="toggleActive()">
+            This is a header, click me to change my content
+        </h1>
+    </body>
+</html>
