@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DotGothic16&family=Jua&family=Poppins:wght@700&family=Young+Serif&display=swap');
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    body {
+      background: #999;
+      width: 100%;
+    }
+  }
+
 #about{
     padding: none;
     color: white;

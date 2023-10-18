@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DotGothic16&family=Jua&family=Poppins:wght@700&family=Young+Serif&display=swap');
 
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  body {
+    background: #999;
+    width: 100%;
+  }
+}
+
 html{
   background: url('/Users/carminebattista/Documents/GitHub/WebDevF23/Midterm/Portfolio_Website/resume/Screen Shot 2023-10-18 at 6.11.08 AM.png') no-repeat center center fixed;
   -webkit-background-size: cover;
