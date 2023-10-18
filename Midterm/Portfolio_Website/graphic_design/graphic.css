@@ -45,13 +45,24 @@ html {
 footer a{
   font-size: 20px;
   text-decoration: none;
-  color: #999;
+  color: white;
+  text-shadow:2px 2px 2px #999;
 }
-
+footer p{
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  text-shadow:2px 2px 2px #999;
+}
  .container{
     width:900px;
     margin:0 auto;
     padding-top: 50px;
+}
+
+.container h1{
+  text-align: center;
+  text-shadow:2px 2px 2px #999;
 }
 
 .polaroid {
@@ -65,8 +76,8 @@ footer a{
 .polaroid img {
     width:300px;
     height:300px;
-    border: 10px solid #FEF9EF;
-    border-bottom: 45px solid #FEF9EF;
+    border: 10px solid #f7d99f;
+    border-bottom: 45px solid  #f7d99f;
     /*h-shadow v-shadow | blur spread color*/
     -webkit-box-shadow: 3px 3px 3px 3px rgba(10,10,10,0.5);
     -moz-box-shadow: 3px 3px 3px 3px rgba(10,10,10,0.5);
@@ -80,13 +91,19 @@ footer a{
     width: 300px;
     height:85px;
     bottom: 10px;
-    color: black;
+    color: white;
+    text-shadow:2px 2px 2px #999;
 }
 
 /* TRANSFORMS */
 
-.rotate-left, .rotate-right{
+.rotate-left, .rotate-right, .scaleX{
     transition: all 2s ease-in-out;
+}
+
+.scaleX:hover{
+  transform: scale(1.5,1.5);
+  z-index: 20;
 }
 
 .rotate-left{

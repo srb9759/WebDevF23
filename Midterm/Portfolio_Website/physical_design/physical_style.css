@@ -37,12 +37,20 @@ html {
   padding-bottom: 2px;
   background-color: rgb(85, 145, 182);
   color: white;
+  
 }
 
 footer a{
   font-size: 20px;
   text-decoration: none;
-  color: #999;
+  color: white;
+  text-shadow:2px 2px 2px #999;
+}
+footer p{
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  text-shadow:2px 2px 2px #999;
 }
 
 .container h1{
@@ -51,11 +59,21 @@ footer a{
     text-align: center;
     position: center;
     color: rgb(253, 252, 252);
+    font-size: 36px;
+    text-shadow:2px 2px 2px #999;
 }
 .container h2{
     text-align: center;
     position: center;
     color: rgb(190, 186, 186);
+}
+
+.container h3{
+  text-align: center;
+  position: center;
+  color: rgb(190, 186, 186);
+  text-shadow:2px 2px 2px #999;
+
 }
 
 .container p{
