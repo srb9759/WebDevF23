@@ -18,6 +18,23 @@ html{
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
 }
 
+footer {
+  font-size: 20px;
+  margin-top: 20px;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  background-color: rgb(126, 81, 147);
+  color: white;
+}
+
+footer a{
+  font-size: 20px;
+  text-decoration: none;
+  color: #999;
+}
+
 h1{
     padding-top: 10px;
     padding-bottom: 20px;
@@ -30,8 +47,9 @@ h1{
 .dropbtn {
     font-family: 'Young Serif', serif;
       background-color: #d3afe0;
-      box-shadow: 5px 5px 10px rgb(102, 101, 101), 10px 10px 10px rgb(168, 165, 165), 15px 15px 10px rgb(234, 236, 234);
+      box-shadow: 2px 2px 5px rgb(102, 101, 101), 5px 5px 5px rgb(168, 165, 165), 7px 7px 5px rgb(234, 236, 234);
       color: white;
+      margin: 16px;
       padding: 16px;
       font-size: 16px;
       border: none;
@@ -63,7 +81,7 @@ h1{
     }
     
     /* Change color of dropdown links on hover */
-    .dropdown-content a:hover {background-color: #ddd;}
+    .dropdown-content a:hover {background-color: rgb(203, 160, 203);}
     
     /* Show the dropdown menu on hover */
     .dropdown:hover .dropdown-content {display: block;}

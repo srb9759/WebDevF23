@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DotGothic16&family=Jua&family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DotGothic16&family=Jua&family=Poppins:wght@700&family=Young+Serif&display=swap');
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     body {
@@ -14,7 +14,7 @@
 html, body {
     margin: 0;
     padding:none;
-    font-family: 'DotGothic16', sans-serif;
+    font-family: 'Young Serif', serif;
 }
 
 
@@ -28,6 +28,18 @@ html {
     -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
 }
 
+footer {
+    text-decoration: none;
+    text-align: center;
+    padding: 2px;
+    background-color: rgb(232, 203, 160);
+    color: white;
+  }
+
+  footer a{
+    text-decoration: none;
+    color: #999;
+  }
 
 .container{
     width: 90%;
@@ -88,7 +100,6 @@ html {
     height: 250px;
     width: 250px;
     border-radius: 50%;
-    box-shadow: 5px 5px 10px rgb(186, 148, 148), 10px 10px 10px rgb(214, 178, 178), 15px 15px 10px rgb(234, 236, 234);
     top:-50px; 
     left:-35px; 
     display:block; 
@@ -102,6 +113,7 @@ html {
 /* hover about me circle */
 .thumbnail:hover{ 
      transform: scale(1.5); 
+     box-shadow: 5px 5px 10px rgb(186, 148, 148), 10px 10px 10px rgb(214, 178, 178), 15px 15px 10px rgb(234, 236, 234);
 }
 
 /* postion graphic design circle */
@@ -110,7 +122,6 @@ html {
     height:300px;
     width:300px;
     border-radius: 50%;
-    box-shadow: 5px 5px 10px rgb(188, 187, 138), 10px 10px 10px rgb(218, 214, 180), 15px 15px 10px rgb(234, 236, 234);
     top:-10px; 
     left:-10px; 
     display:block; 
@@ -124,6 +135,7 @@ html {
 /* hover graphic design circle */
 .thumbnail2:hover { 
     transform: scale(1.35); 
+    box-shadow: 5px 5px 10px rgb(187, 160, 119), 10px 10px 10px rgb(216, 190, 141), 15px 15px 10px rgb(234, 236, 234);
 }
     
 /* postion audio design circle */
@@ -132,7 +144,6 @@ html {
     height: 250px;
     width: 250px;
     border-radius: 50%;
-    box-shadow: 5px 5px 10px rgb(153, 184, 160), 10px 10px 10px rgb(189, 217, 197), 15px 15px 10px rgb(234, 236, 234);
     top:-100px; 
     left:-105px; 
     display:block; 
@@ -146,6 +157,7 @@ html {
 /* hover audio design circle */
 .thumbnail3:hover { 
     transform: scale(1.5); 
+    box-shadow: 5px 5px 10px rgb(153, 184, 160), 10px 10px 10px rgb(189, 217, 197), 15px 15px 10px rgb(234, 236, 234);
 }
 
 /* postion physical design circle */
@@ -153,7 +165,6 @@ html {
     height: 280px;
     width: 280px;
     border-radius: 50%;
-    box-shadow: 5px 5px 10px rgb(153, 173, 184), 10px 10px 10px rgb(189, 210, 217), 15px 15px 10px rgb(234, 236, 234);
     top:-100px; 
     left:-105px; 
     display:block; 
@@ -167,6 +178,7 @@ html {
 /* hover physical design circle */
 .thumbnail4:hover { 
     transform: scale(1.35); 
+    box-shadow: 5px 5px 10px rgb(153, 173, 184), 10px 10px 10px rgb(189, 210, 217), 15px 15px 10px rgb(234, 236, 234);
 }
 
 /* postion resume circle */
@@ -174,7 +186,6 @@ html {
     height: 275px;
     width: 275px;
     border-radius: 50%;
-    box-shadow: 5px 5px 10px rgb(178, 153, 184), 10px 10px 10px rgb(207, 189, 217), 15px 15px 10px rgb(234, 236, 234);
     top:-100px; 
     left:-105px; 
     display:block; 
@@ -188,114 +199,6 @@ html {
 /* hover resume circle */
 .thumbnail5:hover { 
     transform: scale(1.5); 
+    box-shadow: 5px 5px 10px rgb(178, 153, 184), 10px 10px 10px rgb(207, 189, 217), 15px 15px 10px rgb(234, 236, 234);
 }
-
-/* position of about me link */
-.link1{
-    position: relative;
-    width: 273px;
-    
-}
-
-.link1 .mask .inf{
-    position: absolute;
-    text-decoration: none;
-    font-size: 24px;
-    color: black;
-    text-shadow: 2px 2px 4px black;
-    top: -560px;
-    right:10px;
-}
-
-/* color change when hovering over link */
-.link1:hover .inf:hover{
-    color: white;
-}
-
-/* position of graphic design link */
-.link2{
-    position: relative;
-    width: 800px;
-}
-
-.link2 .mask .inf{
-    position: absolute;
-    text-decoration: none;
-    font-size: 24px;
-    color: black;
-    text-shadow: 2px 2px 4px #000000;
-    top: -540px;
-    right:10px;
-}
-
-/* color change when hovering over link */
-.link2:hover .inf:hover{
-    color: white;
-}
-
-/* position of audio design link */
-.link3{
-    position: relative;
-    width: 1225px;
-}
-
-.link3 .mask .inf{
-    position: absolute;
-    text-decoration: none;
-    font-size: 24px;
-    color: black;
-    text-shadow: 2px 2px 4px #000000;
-    top: -540px;
-    right:10px;
-}
-
-/* color change when hovering over link */
-.link3:hover .inf:hover{
-    color: white;
-}
-
-/* position of physical design link */
-.link4{
-    position: relative;
-    width: 425px;
-}
-
-.link4 .mask .inf{
-    position: absolute;
-    text-decoration: none;
-    font-size: 24px;
-    color: black;
-    text-shadow: 2px 2px 4px #000000;
-    top: -190px;
-    right:10px;
-}
-
-/* color change when hovering over link */
-.link4:hover .inf:hover{
-    color: white;
-}
-
-/* position of resume link */
-.link5{
-    position: relative;
-    width: 1020px;
-}
-
-.link5 .mask .inf{
-    position: absolute;
-    text-decoration: none;
-    font-size: 24px;
-    color: black;
-    text-shadow: 2px 2px 4px #000000;
-    top: -190px;
-    right:10px;
-}
-
-/* color change when hovering over link */
-.link5:hover .inf:hover{
-    color: white;
-}
-
-
-
 
