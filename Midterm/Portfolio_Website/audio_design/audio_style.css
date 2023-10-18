@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DotGothic16&family=Jua&family=Poppins:wght@700&family=Young+Serif&display=swap');
+
+
+
+html{
+    background: url('/Users/carminebattista/Documents/GitHub/WebDevF23/Midterm/Portfolio_Website/audio_design/texturedgreen.jpeg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /*If you want it to work in IE*/
+    filter: progid: DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+
+}
+
+body{
+    font-family: 'Young Serif', serif;
+}
+
+.container h1{
+    text-align: center;
+    color: white;
+    font-size: 36px;
+}
+
+.container .audio1{
+    font-size: 24px;
+    text-align: center;
+}
+
+.container .audio1 .afile{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.container .audio1 p{
+    text-align: left;
+    font-size: 18px;
+    color: black;
+}
+
+.container .audio2{
+    font-size: 24px;
+    text-align: center;
+}
+
+.container .audio2 .afile{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.container .audio2 p{
+    text-align: left;
+    font-size: 18px;
+    color: black;
+}
+
+.container .audio3{
+    font-size: 24px;
+    text-align: center;
+}
+
+.container .audio3 .afile{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.container .audio3 p{
+    text-align: left;
+    font-size: 18px;
+    color: black;
+}
+
+.container .audio4{
+    font-size: 24px;
+    text-align: center;
+}
+
+.container .audio4 .afile{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.container .audio4 p{
+    text-align: left;
+    font-size: 18px;
+    color: black;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    font-family: 'Young Serif', serif;
+      background-color: #4e8156;
+      box-shadow: 5px 5px 10px rgb(102, 101, 101), 10px 10px 10px rgb(168, 165, 165), 15px 15px 10px rgb(234, 236, 234);
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+    }
+    
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    
+    /* Links inside the dropdown */
+    .dropdown-content a {
+        font-family: 'Young Serif', serif;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {background-color: #ddd;}
+    
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {display: block;}
+    
+    /* Change the background color of the dropdown button when the dropdown content is shown */
+    .dropdown:hover .dropbtn {background-color: #bbdebb;}

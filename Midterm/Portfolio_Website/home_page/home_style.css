@@ -10,9 +10,9 @@ html, body {
     font-family: 'DotGothic16', sans-serif;
 }
 
-/*
+
 html {
-    background: url(../home_page/img/background.jpeg) no-repeat center center fixed;
+    background: url('/Users/carminebattista/Documents/GitHub/WebDevF23/Midterm/Portfolio_Website/home_page/img/paper.jpeg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -20,7 +20,7 @@ html {
     filter: progid: DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
     -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
 }
-*/
+
 
 .container{
     width: 90%;

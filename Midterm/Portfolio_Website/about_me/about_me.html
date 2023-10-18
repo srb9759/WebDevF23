@@ -7,6 +7,83 @@
         <link rel="stylesheet" href="./about_style.css" />
     </head>
     <body>
-        
+        <div class="dropdown">
+            <button class="dropbtn">Navigation</button>
+            <div class="dropdown-content">
+              <a href="/Users/carminebattista/Documents/GitHub/WebDevF23/Midterm/Portfolio_Website/home_page/home.html">Home</a>
+              <a href="/Users/carminebattista/Documents/GitHub/WebDevF23/Midterm/Portfolio_Website/physical_design/physical.html">Physical Design</a>
+              <a href="/Users/carminebattista/Documents/GitHub/WebDevF23/Midterm/Portfolio_Website/audio_design/audio.html">Audio Design</a>
+              <a href="/Users/carminebattista/Documents/GitHub/WebDevF23/Midterm/Portfolio_Website/graphic_design/graphic.html">Graphic Design</a>
+              <a href="/Users/carminebattista/Documents/GitHub/WebDevF23/Midterm/Portfolio_Website/resume/resume.html">Resume</a>
+            </div>
+          </div>
+        <div id="about">
+            <div class="container">
+
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="img/me.png" alt="image of me">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>My name is Sofia Battista and I am an aspiring UX designer. 
+                        I spent my undergraduate at New York University where I focused in Integrated Digital Media. 
+                        I have a background in computer science which has fueled my passion to integrate computer coding into my UX designs. 
+                        Throughout my undergraduate career I have had numerous opportunities to create both hands-on and digital designs which
+                        have built up my skills using a wide variety of tools. I am extremely passionate about creating wearable medical devices 
+                        for individuals with disabilities. Growing up my father worked in construction where he focused on creating more accessible 
+                        housing and inclusive working environments, in particular focusing on people with disabilities. Over the years I have helped 
+                        him with these projects and got to see first hand how a disability can affect someone's daily life. My dads years of work inspired 
+                        me to carry on his efforts in helping those in need by creating devices that help revolutionize medical prosthesis. My goal is to come 
+                        back to New York City after graduation to work hand in hand with the NYU Langone Center for Amputation Reconstruction to make big strides in the field. 
+                        </p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                                <li><span>Web Development</span><br>Web App Development</li>
+                                <li><span>App Development</span><br>Building Android/iOS apps</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2021 - Current</span><br>UI/UX Design Training</li>
+                                <li><span>2019 - 2021</span><br>Team Lead at StarApp LLC.</li>
+                                <li><span>2017 - 2019</span><br>Internship at ekart eCommerce</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2026</span><br>MS Emerging Technology NYU</li>
+                                <li><span>2024</span><br>BS Integrated Digital Media NYU</li>
+                                <li><span>2020</span><br>Pascack Valley High School</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var tablinks = document.getElementsByClassName('tab-links');
+            var tabcontents = document.getElementsByClassName('tab-contents');
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+
     </body>
 </html>
