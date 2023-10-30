@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>JSON</title>
+
+        <script type="text/javascript">
+            var customer ={
+                firstName : 'Tony',
+                lastName: 'Pony',
+                married: true,
+                pets: ['dog', 'cat', 'iguana']
+            }
+            //access the customers first name using dot notation
+            console.log(customer.firstName)
+            //access the last by using a string index 
+            //console.log(customer[lastNameIndex])
+            console.log(customer['lastName'])
+            //how would we log Tony's second pet?
+            console.log(customer['pets'][1])
+            console.log(customer.pets[1])
+            //loop through all pets in the array 
+            for (var i=0; i<customer.pets.length; i++)
+            {
+                console.log(customer.pets[i])
+            }
+
+            // for(pet in customer.pets){
+            //     consple.log(pet.)
+            // }
+
+            //we can also add new properties 
+            customer.age = 45
+            console.log(customer)
+
+            //we can also overwrite an existing value 
+            customer.married = false
+            console.log(customer)
+
+            //we can also add to the array of pets 
+            customer.pets.push('goat')
+            console.log(customer.pets)
+            
+            //or remove the last one 
+            //returns the removed object 
+            var removedPet = customer.pets.pop()
+            console.log("Removing Tony's pet " + removedPet)
+            console.log(customer.pets) 
+
+            var myClass = {
+                me: {
+                    firstName: 'Tony',
+                    lastName: 'Pony',
+                    married: false,
+                    pets: ['dog', 'cat', 'iguana'],
+                },
+                others: [
+                    { 
+                        firstName: 'Sally',
+                        lastName: 'Omally',
+                        married: false,
+                        pets: ['chicken'],
+                    },
+                    { 
+                        firstName: 'Billy',
+                        lastName: 'Goat',
+                        married: true,
+                        pets: ['goat', 'chicken', 'parrot'],
+                    },
+
+            
+                ],
+                    
+                    
+            }
+            
+            //Tony's third pet
+            console.log("Tony's third pet is a " + myClass.me.pets[2])
+
+            //Billy's last name
+            console.log("Billy's last name is " + myClass.others[1].lastName)
+
+            //console.log("Billy's last name is " + myClass.others.lastName[1])
+
+            //The 'size' of the other's array
+            console.log(myClass.others.length)
+
+            //Sally's first pet 
+            console.log("Sally's first pet is a "+myClass.others[0].pets[0])
+
+            //the first name of everyone in other array 
+            for (var i=0; i<myClass.others.length; i++)
+            {
+                console.log("Name " + i + " is " + myClass.others[i].firstName)
+            }
+         
+            
+        </script>
+    </head>
+    <body></body>
+</html>
