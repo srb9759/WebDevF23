@@ -25,7 +25,7 @@
                 border: 1 px solid green;
             }
         </style>
-        <script type="text/javascript">
+        <script>
             var btn
             //waits for the DOM content to load before executing the following
             //in this example the callback function is anonymous aka cannot be called anywhere else 
@@ -47,7 +47,7 @@
             //const hideKitten = () => {... do stuff in here}
 
             function hideKitten(event){
-                var targetBtn= cument.getElementById('hide')
+                var targetBtn= document.getElementById('hide')
                 var kitty= document.getElementById('kitty')
                 kitty.clsasList.toggle('hidden')
                 console.log()
