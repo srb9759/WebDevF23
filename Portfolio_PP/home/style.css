@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DotGothic16&family=Jua&family=Poppins:wght@700&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DotGothic16&family=Inika:wght@400;700&family=Jua&family=Poppins:wght@300;400;500;600;700&family=Young+Serif&display=swap');
+
+body{
+    margin-top:20px;
+}
+
+/*signature*/
+.container{
+    width:20%;
+    height:20vh;
+    display: grid;
+    position: relative;
+    margin-left: 1200px;
+    margin-top:-760px ;
+}
+
+
+/*Header*/
+h1{
+    font-family: 'Inika', serif;
+    margin-left:850px;
+    margin-bottom:-70px;
+    position: relative;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #ebebe9;
+    font-family: 'Inika', serif;
+    box-shadow: 5px 5px 5px rgb(7, 7, 7), 2px 2px 2px rgb(107, 106, 106), 1px 1px 5px rgb(173, 174, 173);
+    color: rgb(62, 104, 70);
+    margin: 10px;
+    padding: 16px;
+    font-size: 16px;
+    position: relative;
+    border: none;
+  }
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    font-family: 'Inika', serif;;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    text-decoration-color: #acaca8;
+    min-width: 160px;
+    margin-left: 16px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {color: rgb(59, 110, 62);}
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+
+
+  /* Square Design on Home Page*/
+
+    /*Squares*/
+    .shapes .square1{
+        margin-top: 30px;
+        margin-left: 80px;
+        height: 350px;
+        width: 500px;
+        position: relative;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        background-color: #81BB8E;
+    }
+    .shapes .square2{
+        margin-top: -350px;
+        margin-left: 700px;
+        height: 350px;
+        width: 500px;
+        position: relative;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        background-color: #5B9868;
+    }
+    .shapes .square3{
+        margin-top: -60px;
+        margin-left: 300px;
+        height: 350px;
+        width: 500px;
+        position: relative;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        background-color: #90CF9E;
+    }
+
+    /*Circles*/
+    .shapes .circle1{
+        margin-top:-375px;
+        margin-left:220px;
+        height:275px;
+        width: 275px;
+        position: relative;
+        background-color: white;
+        border-radius: 50%;
+    }
+    .shapes .circle2{
+        margin-top:-650px;
+        margin-left:600px;
+        height:275px;
+        width: 275px;
+        position: relative;
+        background-color: white;
+        border-radius: 50%;
+    }
+    .shapes .circle3{
+        margin-top:-30px;
+        margin-left:1000px;
+        height:275px;
+        width: 275px;
+        position: relative;
+        background-color: white;
+        border-radius: 50%;
+    }
+
+/*My Name*/
+    h2{
+        font-family: 'Inika', serif;
+        font-size: 200px;
+        margin-left:230px;
+        margin-top:-350px;
+        position: relative;
+    }
+    h3{
+        font-family: 'Inika', serif;
+        font-size:200px;
+        margin-left:230px;
+        margin-top:-10px;
+        position: relative;
+    }
+
+/*Arrow Area*/
+    .piece{
+        font-family: 'Inika', serif;
+        font-size:25px;
+        margin-left:950px;
+        margin-top:75px;
+        color:#3E6B48;
+        position: relative;
+        background-color: transparent;
+        border-color: transparent;
+    }
+
+    .piece:hover{color: #5B9868;}
+
+
+    .arrows-body{
+        margin-top: -190px;
+        margin-left: 1300px;
+        position: relative;
+        display: flex;
+    }
+
+    .arrow{
+        position: relative;
+        width:60px;
+        height:60px;
+        border-top: 12px solid #3E6B48;
+        border-left: 12px solid #3E6B48;
+        transform: rotate(135deg);
+        animation: arrow-load 2s infinite;
+    }
+    .arrow:nth-child(1)
+    {
+        left:16px;
+        animation-delay: -0.4s;
+    }
+    .arrow:nth-child(2)
+    {
+        animation-delay: -0.2s;
+    }
+    .arrow:nth-child(3)
+    {
+        right:16px;
+    }
+    @keyframes arrow-load {
+        0%{
+            opacity: 0;
+            transform: rotate(135deg) translate(60px, 60px);
+        }
+        0%{
+            opacity: 1;
+        }
+        100%{
+            opacity: 0;
+            transform: rotate(135deg) translate(-60px, 6-0px);
+        }
+    }
+    
+    
+/*Footer*/
+    footer {
+        font-family: 'Inika', serif;
+        font-size: 16px;
+        margin-top: 50px;
+        text-decoration: none;
+        text-align: center;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        background-color: #3E6B48;
+        color: white;
+    }
+    footer a{
+        font-family: 'Inika', serif;
+        font-size: 16px;
+        text-decoration: none;
+        color: white;
+    }
+    footer p{
+        font-family: 'Inika', serif;
+        font-size: 16px;
+        text-decoration: none;
+        color: white;   
+    }
+
+    
