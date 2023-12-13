@@ -1,117 +1,158 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DotGothic16&family=Jua&family=Poppins:wght@700&family=Young+Serif&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DotGothic16&family=Jua&family=Poppins:wght@700&family=Young+Serif&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DotGothic16&family=Inika:wght@400;700&family=Jua&family=Poppins:wght@300;400;500;600;700&family=Young+Serif&display=swap');
-
-
-
-/*Header*/
-h1{
-  font-family: 'Inika', serif;
-  margin-left:850px;
-  margin-bottom:-70px;
-  position: relative;
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
 }
 
-
-
-
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    body {
-      background: #999;
-      width: 100%;
-    }
-  }
-
-#about{
-    padding: none;
-    color: rgb(0, 0, 0);
+body{
+    background-color: #e7ecf9;
 }
 
-
-.container{
-  font-family: 'Inika', serif;
-}
-.row{
+.heading{
+    width: 90%;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
 }
-
-.about-col-1{
-    flex-basis: 35%;
-}
-
-.about-col-1 img{
-    padding-top: 20px;
-    width: 100%;
-    height: auto;
-   
-}
-
-.about-col-2{
-    flex-basis: 60%;
-}
-
-.about-col-2 p{
-    font-size: 18px;
-}
-
-.sub-title{
-    font-size: 60px;
-    font-weight:600;
-    color:rgb(16, 43, 122);
-    
-}
-
-.tab-titles h1{
-    color:rgb(59, 110, 62);
-    
-}
-
-.tab-titles{
-    display: flex;
-    margin: 20px 0 10px;
-}
-
-.tab-links{
-    margin-right: 50px;
-    font-size: 18px;
-    font-weight: 500;
-    cursor: pointer;
+.heading h1{
+    font-size: 50px;
+    color: black;
+    margin-bottom: 25px;
     position: relative;
 }
 
-.tab-links::after{
-    content: '';
-    width:0;
-    height: 3px;
-    background: black;
+.heading h1::after{
+    content: "";
     position: absolute;
-    left: 0;
-    bottom: -8px;
-    transition: 0.5s;
-
-}
-
-.tab-links.active-link::after{
-    width:50%;
-}
-
-.tab-contents ul li{
-  color:rgb(59, 110, 62);
-    list-style: none;
-    margin: 15px 0;
-}
-
-.tab-contents ul li span{
-    color:black;
-    font-size: 14px;
-}
-
-.tab-contents{
-    display: none;
-}
-
-.tab-contents.active-tab{
+    width: 100%;
+    height:4px;
     display: block;
+    margin: 0 auto;
+    background-color: #4c4eaf;
+}
+
+.heading p{
+    font-size:18px ;
+    color: #666;
+    margin-bottom: 35px;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.about-image{
+    flex:1;
+    margin-right: 40px;
+    overflow: hidden;
+}
+
+.about-image img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.about-content{
+    flex: 1;
+}
+
+.about-content h2{
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.about-content p{
+    font-size: 18px;
+    line-height: 1.5;
+    color: #4c4eaf;
+}
+
+
+/*NavBar*/
+#navigation{
+    background:#555feb;
+    padding: 20px 40px;
+    z-index: 100;
+    width: 100%;
+}
+#navigation li{
+    padding: 0 10px;
+    text-decoration: none;
+}
+
+#navigation li a{
+    color: #fff;
+    text-decoration: none;
+}
+.navbar-brand,
+.navbar-brand:hover{
+    color:#fff;
+    font-weight: bold;
+}
+.header-social-links{
+    padding-left: 20px;
+}
+.header-social-links a{
+    color:#fff;
+    padding-left: 6px;
+}
+
+.header-social-links a:hover{
+    color: #6787f9;
+}
+
+.navbar-toggler i{
+    color: white;
+}
+
+.navbar-toggler{
+    outline: none!important;
+}
+
+.fixedNav #navigation{
+    position: fixed;
+    top: 0;
+}
+
+@media screen and (max-width:768px){
+    .heading{
+        padding:0px 20px;
+    }
+    .heading h1{
+        font-size: 36px;
+    }
+    .heading p{
+        font-size: 18px;
+        margin-bottom: 0px;
+    }
+    .container{
+        padding: 0px;
+    }
+    .about{
+        padding:20px ;
+        flex-direction: column;
+    }
+    .about-image{
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    .about-content p{
+        padding:0px;
+        font-size: 16px;
+    }
+    
 }

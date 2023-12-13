@@ -56,7 +56,7 @@ body{
 #hero h2{
     color:#26429d;
     margin: 15px 0 0 0;
-    font-size: 36px;
+    font-size: 30px;
 }
 
 #hero .main-btn{
@@ -146,6 +146,9 @@ body{
     padding-bottom: 30px;
 
 }
+.services h2{
+    padding-bottom: 15px;
+}
 
 .services .des-box{
     padding: 60px 30px;
@@ -224,6 +227,7 @@ body{
 .active-item{
     color: #6787f9;
 }
+
 
 
 /*Team*/
