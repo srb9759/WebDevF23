@@ -4,7 +4,7 @@
 }
 
 body{
-    background:#5571ff;
+    background:#7086f5;
     font-size: 14px;
     font-family: 'Playfair Display', serif;
 }
@@ -23,7 +23,7 @@ body{
 .contact-right{
     flex-basis:40%;
     padding: 40px;
-    background: black;
+    background: #333;
     color:white;
 }
 h1{
@@ -69,7 +69,7 @@ label{
 }
 
 button{
-    background:#1c00b5;
+    background:#4434a2;
     width: 100px;
     border: none;
     outline: none;

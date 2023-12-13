@@ -23,7 +23,7 @@ $(document).ready(function(){
         }
         else{
             $('.filter').not('.' + value).hide(300);
-            $('filter').filter('.' + value).show(300);
+            $('.filter').filter('.' + value).show(300);
         }
     });
     $('.work-list-item').click(function(){

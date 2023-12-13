@@ -18,15 +18,20 @@
      </head>
   <body>
 
-    <!--Hero Section-->
+    <!--Main Section-->
       <section id="hero">
         <div class="hero-container">
+          <!--Title-->
           <h1>Battista Construction Corporation</h1>
+          <!--Subtext-->
           <h2>- all types of residential and commercial construction -</h2>
           <a href="../contact/index.html" class="main-btn" target="_blank">Let's Talk</a>
         </div>
       </section>
-    <!--end of Hero Section-->
+    <!--end of Main Section-->
+
+
+
     <!--Navbar-->
       <nav id="navigation" class="navbar navbar-expand-lg">
         <a href="#" class="navbar-brand">Battista Construction</a>
@@ -35,27 +40,38 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
+            <!--To About Page-->
             <li class="nav-item active">
               <a href="../about/index.html" class="nav-link" >About</a>
             </li>
+            <!--Services Section-->
             <li class="nav-item">
               <a href="#services" class="nav-link">Services</a>
             </li>
+            <!--Gallery Of Work Section-->
             <li class="nav-item">
               <a href="#gallery" class="nav-link">Projects</a>
             </li>
+            <!--Contact Information-->
             <li class="nav-item">
               <a href="#info" class="nav-link">Contact</a>
             </li>
           </ul>
         </div>
+        <!--Using Icons to link to social media accounts-->
+        <!--By adding target="_blank" after the the link the link will open in a seperate tab-->
+        <!--Taking the script library from the font awesome site to be able to call on the icons for the following social links-->
+        <!--The script of the font awesome library is located within the head of this html file-->
         <div class="header-social-links">
+          <!--Facebook-->
           <a href="https://www.facebook.com/people/Battista-Construction-Corporation/100091738276091/" target="_blank">
             <i class="fab fa-facebook"></i>
           </a>
+          <!--Yelp-->
           <a href="https://www.yelp.com/biz/battista-construction-corporation-river-vale" target="_blank">
             <i class="fab fa-yelp"></i>
           </a>
+          <!--Instagram-->
           <a href="https://instagram.com/battistaconstructioncorp?igshid=NGVhN2U2NjQ0Yg%3D%3D&utm_source=qr 
           " target="_blank">
             <i class="fab fa-instagram"></i>
@@ -138,6 +154,10 @@
               <h1 class="display-4 mb-4">Our Work</h1>
             </div>
           </div>
+          <!--The Gallery items are split up using data filters 
+          so there are 4 sections one with all the pictures then the other 3 divided by the categories.
+          Using a javascript file I was able to call upon the pictures that correlate with the section so that
+          when the section title is clicked you can see the associated pictures.-->
           <ul class="list-inline text-center text-uppercase">
             <li class="list-inline-item work-list-item active item" data-filter="all">
                 <span class="mx-3">All</span>
@@ -410,7 +430,7 @@
         </div>
       <div class="container footer-bottom clear-fix">
         <div class="copyright">
-          &copy;Copyright<strong>Battista Construction Corporation</strong>.All Rights Reserved
+          &copy;Copyright<strong><br>Battista Construction Corporation<br></strong>All Rights Reserved
         </div>
         <div class="credits">
           Designed by Sofia Battista
@@ -418,16 +438,6 @@
       </div>
     </footer>
     <!--End Footer--> 
-
-    
-
-
-
-
-
-
-
-
 
       <script src="script.js"></script>
     <!-- Optional JavaScript -->
