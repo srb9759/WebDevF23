@@ -1,0 +1,375 @@
+body{
+    font-family: 'Playfair Display', serif;
+}
+
+/*hero section*/
+#hero{
+    width:100%;
+    height:100vh;
+    background: url("../img/printlowopac.jpeg") top center;
+    background-size:cover;
+    position: relative;
+    margin-bottom: -72px;
+
+}
+
+@media (max-width: 992){
+    #hero{
+        margin-bottom: -58px;
+    }
+}
+
+#hero:before{
+    content:"";
+    background:linear-gradient(rgba(26,0,33,0.5)0%, rbga(26,0,33,0.5)5%, rgba(38,6,51,0.5)40%,rgba(147,47,69,0.7)76%,rgba(236,97,93,0.7)94%,rgba(246,97,93,0.5)100%)repeat scroll 0%, 0%;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#hero .hero-container{
+    position:absolute;
+    bottom:0;
+    top: 0;
+    left: 15px;
+    right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+#hero h1{
+    
+    margin: 0;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 56px;
+    text-transform: uppercase;
+    color: #020a66;
+}
+
+#hero h2{
+    color:#26429d;
+    margin: 15px 0 0 0;
+    font-size: 36px;
+}
+
+#hero .main-btn{
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 40px;
+    border-radius: 4px;
+    transition: 0.5s;
+    margin-top: 30px;
+    background: #3f6bfd;
+    border: 2px solid #3f5ecd;
+    color: white;
+}
+
+#hero .main-btn:hover{
+    background-color: #01004b;
+    border: 2px solid #010536;
+    color: white;
+    text-decoration: none;
+}
+
+@media (min-width:1024){
+    #hero{
+        background-attachment: fixed;
+    }
+}
+
+@media (max-width:768px){
+    #hero h1{
+        font-size: 30px;
+        line-height: 36px;
+    }
+    #hero h2{
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
+
+/*NavBar*/
+#navigation{
+    background:#555feb;
+    padding: 20px 40px;
+    z-index: 100;
+    width: 100%;
+}
+#navigation li{
+    padding: 0 10px;
+}
+
+#navigation li a{
+    color: #fff;
+}
+.navbar-brand,
+.navbar-brand:hover{
+    color:#fff;
+    font-weight: bold;
+}
+.header-social-links{
+    padding-left: 20px;
+}
+.header-social-links a{
+    color:#fff;
+    padding-left: 6px;
+}
+
+.header-social-links a:hover{
+    color: #6787f9;
+}
+
+.navbar-toggler i{
+    color: white;
+}
+
+.navbar-toggler{
+    outline: none!important;
+}
+
+.fixedNav #navigation{
+    position: fixed;
+    top: 0;
+}
+
+/*Services*/
+.services{
+    padding-bottom: 30px;
+
+}
+
+.services .des-box{
+    padding: 60px 30px;
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 30px 0 35px 0 rgba(32, 1, 73, 0.12);
+    transition: all 0.3s ease-in-out;
+    border-radius: 8px;
+    z-index: 1;
+    text-align: center;
+}
+
+.services .des-box:before{
+    content:"";
+    position: absolute;
+    background: #3f6bfd;
+    right:0;
+    left: 0;
+    bottom: 0;
+    top: 100%;
+    transition: all 0.4s;
+    z-index: -1;
+}
+
+.services .des-box:hover::before{
+    background: #010536;
+    top: 0;
+    border-radius: 0px;
+}
+
+.services .icon{
+    margin-bottom: 15px;
+
+}
+
+.services .icon i{
+    font-size: 48px;
+    line-height: 1;
+    color: #26429d;
+    transition: all 0.3s ease-in-out;
+}
+
+.services .title{
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.services .title a {
+    color: black;
+}
+.services .description{
+    font-size: 15px;
+    line-height: 28px;
+    margin-bottom: 0;
+}
+
+.services .des-box:hover .title a, .services .des-box:hover .description{
+    color:#fff;
+}
+
+.services .des-box:hover .icon i{
+    color:#fff
+}
+
+
+/*Gallery*/
+
+.work-list-item{
+    color:black;
+    cursor: pointer;
+    user-select: none;
+}
+
+.active-item{
+    color: #6787f9;
+}
+
+
+/*Team*/
+.section-bg{
+    background-image: linear-gradient(rgba(2, 1, 48, 0.5), rgba(87, 118, 243, 0.7)),
+    url(../img/blue.png);
+    background-position: center;
+    color: white;
+    background-attachment: fixed;
+    margin-top: 100px;
+}
+.team-member{
+    margin-bottom: 20px;
+    overflow:hidden;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 0px 2px 15px rgba(0,0,0,0.1);
+}
+
+.team .member .member-img{
+    position: relative;
+    overflow: hidden;
+}
+
+.team .member .social{
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+    right: 0;
+    opacity: 0;
+    transition: ease-in-out 0.3s;
+    text-align: center;
+}
+.team .member .social a{
+    transition: color 0.3s;
+    color: #010536;
+    margin: 0 3px;
+    padding-top: 7px;
+    border-radius: 50px;
+    width: 36px;
+    height: 36px;
+    background: rgba(10, 1, 132, 0.8);
+    display: inline-block;
+    transition: ease-in-out 0.3s;
+    color: white;
+}
+
+.team .member .social a:hover{
+    background:#6e8df4;
+    
+}
+.team .member .social i{
+    font-size: 18px;
+}
+
+.team .member .member-info{
+    padding: 25px 15px;
+}
+
+.team .member .member-info h4{
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: white;
+}
+
+.team .member .member-info span{
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+    color: white;
+}
+
+.team .member:hover .social {
+    opacity:1;
+    bottom: 15px;
+}
+
+/*Footer*/
+
+#footer .footer-top{
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 80px 0;
+}
+#footer .footer-top h3{
+    font-size: 36px;
+    font-weight: 700;
+    position:relative;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+#footer .footer-top p{
+    font-size: 15;
+    font-style: italic;
+    margin: 30px 0 0 0;
+    padding: 0;
+}
+
+
+#footer .footer-top .social-links{
+    margin-top: 30px;
+}
+#footer .footer-top .social-links a{
+    font-size:18px;
+    display: inline-block;
+    background: #01004b;
+    color: white;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 4px;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+}
+
+#footer .footer-top .social-links a:hover{
+    background: #3f6bfd;
+}
+
+#footer .footer-bottom{
+    border-top: 1px solid #010536;
+    z-index: 2;
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#footer .copyright{
+    float: left;
+}
+
+#footer .credits{
+    float:right;
+    font-size: 13px;
+}
+
+@media(max-width:768px){
+    #footer .copyright, #footer .credits{
+        float: none;
+    }
+    #footer .credits{
+        padding-top: 5px;
+    }
+}

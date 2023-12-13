@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DotGothic16&family=Jua&family=Poppins:wght@700&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DotGothic16&family=Jua&family=Poppins:wght@700&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DotGothic16&family=Inika:wght@400;700&family=Jua&family=Poppins:wght@300;400;500;600;700&family=Young+Serif&display=swap');
+
+
+
+/*Header*/
+h1{
+  font-family: 'Inika', serif;
+  margin-left:850px;
+  margin-bottom:-70px;
+  position: relative;
+}
+
+
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    body {
+      background: #999;
+      width: 100%;
+    }
+  }
+
+#about{
+    padding: none;
+    color: rgb(0, 0, 0);
+}
+
+
+.container{
+  font-family: 'Inika', serif;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1{
+    flex-basis: 35%;
+}
+
+.about-col-1 img{
+    padding-top: 20px;
+    width: 100%;
+    height: auto;
+   
+}
+
+.about-col-2{
+    flex-basis: 60%;
+}
+
+.about-col-2 p{
+    font-size: 18px;
+}
+
+.sub-title{
+    font-size: 60px;
+    font-weight:600;
+    color:rgb(16, 43, 122);
+    
+}
+
+.tab-titles h1{
+    color:rgb(59, 110, 62);
+    
+}
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 10px;
+}
+
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width:0;
+    height: 3px;
+    background: black;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+
+}
+
+.tab-links.active-link::after{
+    width:50%;
+}
+
+.tab-contents ul li{
+  color:rgb(59, 110, 62);
+    list-style: none;
+    margin: 15px 0;
+}
+
+.tab-contents ul li span{
+    color:black;
+    font-size: 14px;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}

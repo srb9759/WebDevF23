@@ -1,93 +1,184 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DotGothic16&family=Jua&family=Poppins:wght@700&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DotGothic16&family=Jua&family=Poppins:wght@700&family=Young+Serif&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DotGothic16&family=Inika:wght@400;700&family=Jua&family=Poppins:wght@300;400;500;600;700&family=Young+Serif&display=swap');
 
-body{
-    margin-top:20px;
-}
 
-/*signature*/
-.container{
-    width:20%;
-    height:20vh;
-    display: grid;
-    position: relative;
-    margin-left: 1200px;
-    margin-top:-760px ;
-}
 
 /*Header*/
 h1{
+  font-family: 'Inika', serif;
+  margin-left:850px;
+  margin-bottom:-70px;
+  position: relative;
+}
+
+
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    body {
+      background: #999;
+      width: 100%;
+    }
+  }
+
+#about{
+    padding: none;
+    color: rgb(0, 0, 0);
+}
+
+footer {
+    font-size: 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background-color: rgb(62, 104, 70);
+    color: white;
+  }
+
+  footer a{
     font-family: 'Inika', serif;
-    margin-left:850px;
-    margin-bottom:-70px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    text-shadow:2px 2px 2px #999;
+  }
+  footer p{
+    font-family: 'Inika', serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    text-shadow:2px 2px 2px #999;
+  }
+
+.container{
+  font-family: 'Inika', serif;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1{
+    flex-basis: 35%;
+}
+
+.about-col-1 img{
+    padding-top: 20px;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 10px 10px 5px black;
+}
+
+.about-col-2{
+    flex-basis: 60%;
+}
+
+.about-col-2 p{
+    font-size: 18px;
+}
+
+.sub-title{
+    font-size: 60px;
+    font-weight:600;
+    color:rgb(59, 110, 62);
+    
+}
+
+.tab-titles h1{
+    color:rgb(59, 110, 62);
+    
+}
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 10px;
+}
+
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
     position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width:0;
+    height: 3px;
+    background: black;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+
+}
+
+.tab-links.active-link::after{
+    width:50%;
+}
+
+.tab-contents ul li{
+  color:rgb(59, 110, 62);
+    list-style: none;
+    margin: 15px 0;
+}
+
+.tab-contents ul li span{
+    color:black;
+    font-size: 14px;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
 }
 
 /* Dropdown Button */
 .dropbtn {
-    background-color: #ebebe9;
-    font-family: 'Inika', serif;
-    box-shadow: 5px 5px 5px rgb(7, 7, 7), 2px 2px 2px rgb(107, 106, 106), 1px 1px 5px rgb(173, 174, 173);
-    color: rgb(62, 104, 70);
-    margin: 10px;
-    padding: 16px;
-    font-size: 16px;
-    position: relative;
-    border: none;
-  }
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    font-family: 'Inika', serif;;
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    text-decoration-color: #acaca8;
-    min-width: 160px;
-    margin-left: 16px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {color: rgb(59, 110, 62);}
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {display: block;}
-  
-
-/*Footer*/
-    footer {
-        font-family: 'Inika', serif;
-        font-size: 16px;
-        margin-top: 625px;
-        text-decoration: none;
-        text-align: center;
-        padding-top: 2px;
-        padding-bottom: 2px;
-        background-color: #3E6B48;
-        color: white;
-    }
-    footer a{
-        font-family: 'Inika', serif;
-        font-size: 16px;
-        text-decoration: none;
-        color: white;
-    }
-    footer p{
-        font-family: 'Inika', serif;
-        font-size: 16px;
-        text-decoration: none;
-        color: white;   
-    }
-
-    
+  background-color: #ebebe9;
+  font-family: 'Inika', serif;
+  box-shadow: 5px 5px 5px rgb(7, 7, 7), 2px 2px 2px rgb(107, 106, 106), 1px 1px 5px rgb(173, 174, 173);
+  color: rgb(62, 104, 70);
+  margin: 10px;
+  padding: 16px;
+  font-size: 16px;
+  position: relative;
+  border: none;
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  font-family: 'Inika', serif;;
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  text-decoration-color: #acaca8;
+  min-width: 160px;
+  margin-left: 16px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {color: rgb(59, 110, 62);}
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}

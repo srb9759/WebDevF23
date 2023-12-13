@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Contact Us</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DotGothic16&family=Inika:wght@400;700&family=Jua&family=Playfair+Display:wght@400;500;700&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&family=Young+Serif&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <div class="container">
+            <h1>Connect With Us</h1>
+            <p>Reach out with any project queries or requests. <br>We will reach back out as soon as possible.</p>
+            <div class="contact-box">
+                <div class="contact-left">
+                    <h3>Sent your request</h3>
+                    <form onsubmit="sendEmail(); reset(); return false;">
+                        <div class="input-row">
+                            <div class="input-group" id="name">
+                                <label>Name</label>
+                                <input type="text" placeholder="John Doe">
+                            </div>
+                            <div class="input-group" id="phone">
+                                <label>Phone</label>
+                                <input type="text" placeholder="(XXX)XXX-XXX">
+                            </div>
+                        </div>
+                        <div class="input-row">
+                            <div class="input-group" id="email">
+                                <label>Email</label>
+                                <input type="text" placeholder="johndoe@gmail.com">
+                            </div>
+                            <div class="input-group" id="message">
+                                <label>Subject</label>
+                                <input type="text" placeholder="Request">
+                            </div>
+                        </div>
+
+                        <label>Message</label>
+                        <textarea rows="5" placeholder="Your Request"></textarea>
+
+                        <button type="submit" value="Send">SEND</button>
+                    </form>
+                </div>
+                <div class="contact-right">
+                    <h3>Reach Us</h3>
+
+                    <table>
+                        <tr>
+                            <td>Email:</td>
+                            <td>cbs.constllc@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Phone:</td>
+                            <td>Cell (551) 486-6553</td>
+                            <td>Office (551) 455-3592</td>
+                        </tr>
+                        <tr>
+                            <td>Address:</td>
+                            <td>River Vale, NJ 07675</td>
+                        </tr>
+                        
+                    </table>
+                    
+                </div>
+            </div>
+        </div>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+            function sendEmail(){
+                Email.send({
+                    Host: "smtp.gmail.com",
+                    Username: "sofiabattista24@gmail.com",
+                    Password:"V1nCrptF$",
+                    To:"srb9759@nyu.edu",
+                    From:document.getElementById("email").value,
+                    Subject:"New Request Form Entry",
+                    Body:"Name: " + document.getElementById("name").value 
+                    +"<br> Email: " +document.getElementById("email").value
+                    +"<br> Phone no.: " +document.getElementById("phone").value
+                    +"<br> Message: " +document.getElementById("message").value
+
+                });
+            }
+        </script>
+    </body>
+</html>

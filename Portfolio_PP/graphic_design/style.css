@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DotGothic16&family=Jua&family=Poppins:wght@700&family=Young+Serif&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DotGothic16&family=Inika:wght@400;700&family=Jua&family=Poppins:wght@300;400;500;600;700&family=Young+Serif&display=swap');
 
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 1080p) {
+  body {
+    background: #999;
+    width: 100%;
+  }
+}
+
 body{
     margin-top:20px;
 }
@@ -9,9 +17,9 @@ body{
 .container{
     width:20%;
     height:20vh;
-    display: grid;
+    display:flex;
     position: relative;
-    margin-left: 1200px;
+    margin-left: 1000px;
     margin-top:-760px ;
 }
 
@@ -23,71 +31,146 @@ h1{
     position: relative;
 }
 
-/* Dropdown Button */
-.dropbtn {
-    background-color: #ebebe9;
-    font-family: 'Inika', serif;
-    box-shadow: 5px 5px 5px rgb(7, 7, 7), 2px 2px 2px rgb(107, 106, 106), 1px 1px 5px rgb(173, 174, 173);
-    color: rgb(62, 104, 70);
-    margin: 10px;
-    padding: 16px;
-    font-size: 16px;
-    position: relative;
-    border: none;
-  }
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    font-family: 'Inika', serif;;
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    text-decoration-color: #acaca8;
-    min-width: 160px;
-    margin-left: 16px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {color: rgb(59, 110, 62);}
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {display: block;}
+
+
+    .cards{
+      position: relative;
+      margin-top: 650px;
+      
+    }
+    .card-img-top{
+      align-self: center;
+      display:block; 
+      z-index:999; 
+      cursor: pointer; 
+      -webkit-transition-property: all; 
+      -webkit-transition-duration: 0.3s; 
+      -webkit-transition-timing-function: ease; 
+    }
+
+    .card-img-top:hover{
+      transform: scale(1.5); 
+    }
+
+    .card-body h5{
+      font-family: 'Inika', serif;
+      color:rgb(59, 110, 62);
+    }
+
+    .card-body p{
+      font-family: 'Inika', serif;
+    }
+
+    .card-body{
+      background-color:#ebebe9;
+      
+    }
   
+/*Graphic*/
 
-/*Footer*/
-    footer {
-        font-family: 'Inika', serif;
-        font-size: 16px;
-        margin-top: 625px;
-        text-decoration: none;
-        text-align: center;
-        padding-top: 2px;
-        padding-bottom: 2px;
-        background-color: #3E6B48;
-        color: white;
+    /* Float four columns side by side */
+    .column {
+      float: left;
+      width: 25%;
+      padding: 0 10px;
     }
-    footer a{
-        font-family: 'Inika', serif;
-        font-size: 16px;
-        text-decoration: none;
-        color: white;
-    }
-    footer p{
-        font-family: 'Inika', serif;
-        font-size: 16px;
-        text-decoration: none;
-        color: white;   
-    }
-
     
+    /* Remove extra left and right margins, due to padding in columns */
+    .row {
+      margin: 0 -5px;
+      margin-bottom: 20px;
+      margin-left: 5px;
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* Remove extra left and right margins, due to padding in columns */
+    .row2 {
+      margin: 0 -5px;
+      margin-bottom: 20px;
+      margin-left: 5px;
+    }
+    
+    /* Clear floats after the columns */
+    .row2:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Remove extra left and right margins, due to padding in columns */
+    .row3 {
+      margin: 0 -5px;
+      margin-bottom: 20px;
+      margin-left: 5px;
+    }
+    
+    /* Clear floats after the columns */
+    .row3:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    /* Style the counter cards */
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+      padding: 16px;
+      text-align: center;
+      background-color: #f1f1f1;
+    }
+    
+    /* Responsive columns - one column layout (vertical) on small screens */
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+      }
+    }
+
+    /* Dropdown Button */
+.dropbtn {
+  background-color: #ebebe9;
+  font-family: 'Inika', serif;
+  box-shadow: 5px 5px 5px rgb(7, 7, 7), 2px 2px 2px rgb(107, 106, 106), 1px 1px 5px rgb(173, 174, 173);
+  color: rgb(62, 104, 70);
+  margin: 10px;
+  padding: 16px;
+  font-size: 16px;
+  position: relative;
+  border: none;
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  font-family: 'Inika', serif;;
+  display: none;
+  position:relative;
+  background-color: #f1f1f1;
+  text-decoration-color: #acaca8;
+  min-width: 160px;
+  margin-left: 16px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {color: rgb(59, 110, 62);}
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
