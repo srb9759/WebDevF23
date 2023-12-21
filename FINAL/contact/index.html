@@ -13,7 +13,9 @@
             <p>Reach out with any project queries or requests. <br>We will reach back out as soon as possible.</p>
             <div class="contact-box">
                 <div class="contact-left">
+
                     <h3>Sent your request</h3>
+                    <!--Contact Form: Calls the script function so all the information filled out within this form can be sent to my email-->
                     <form onsubmit="sendEmail(); reset(); return false;">
                         <div class="input-row">
                             <div class="input-group" id="name">
@@ -67,6 +69,8 @@
         </div>
         <script src="https://smtpjs.com/v3/smtp.js"></script>
         <script>
+            //This Function send the information filled out in the contact form to my email
+            //Using a third party host 
             function sendEmail(){
                 Email.send({
                     Host: "smtp.gmail.com",

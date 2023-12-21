@@ -128,6 +128,7 @@ body{
     top: 0;
 }
 
+/*To make the screen responsive */
 @media screen and (max-width:768px){
     .heading{
         padding:0px 20px;
